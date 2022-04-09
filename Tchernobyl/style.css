@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
+*{
+  scroll-behavior: smooth;
+  margin: 0px;
+}
+
+body{
+  background-color: rgb(26, 26, 26);
+  background-image: url("Background.png");
+}
+
+header h1{
+  color: rgb(232, 191, 40);
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+header h2{
+  color : white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 28px;
+  margin-bottom: 150px;
+}
+
+.container section{
+  background-color: rgb(232, 191, 40);
+  transition: width 0.5s, height 0.5s;
+  width: 220px;
+  height: 250px;
+  margin-left: 40px;
+}
+
+.container section img{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.container a:link{
+  text-decoration: none;
+}
+
+.container section:hover{
+  width: 240px;
+  height: 270px;
+  padding: 20px 0px 0px 20px;
+}
+
+.container section h1{
+  text-align: center;
+  color: rgb(26, 26, 26);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@media only screen and (min-width:1px) and (max-width:766px){
+  .container {
+    margin-top: 150px;
+  }
+
+  .container section {
+    margin-left: auto;
+    margin-right: auto;
+    width:220px;
+    margin-bottom: 25px;
+  }
+
+  .encadré{
+    margin: 100px auto;
+  }
+
+  .image img{
+    width: 280px;
+  }
+
+  .sectI{
+    width: 300px;
+    margin: auto;
+  }
+
+  .rond{
+    background-image: url("Radioactif2.png");
+    width: 200px;
+    height: 200px;
+  }
+
+  .rond p{
+    line-height: 20px;
+  }
+
+  .cons .diagramme .rect .rect_left{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .cons .diagramme .rect .rect_right{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    margin-left: 10px;
+  }
+
+  .espaceT{
+    margin: 150px auto;
+  }
+}
+
+
+
+@media only screen and (min-width : 767px) and (max-width : 1279px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    margin-top: 150px;
+    justify-content: center;
+  }
+
+  .container section{
+    margin-top: 50px;
+  }
+
+  .sectI{
+    width: 520px;
+    margin: auto;
+  }
+
+  .image img{
+    width: 500px;
+  }
+
+  .encadré{
+    margin: 150px auto;
+  }
+
+  .présentation_intro {
+    margin-top: 150px;
+  }
+
+  .présentation_intro .gauche{
+    width: 520px;
+    height: 520px;
+    margin: auto;
+  }
+
+  .présentation_intro .droite{
+    margin-top: 150px;
+  }
+
+  .rond{
+    background-image: url("Radioactif.png");
+    width: 300px;
+    height: 300px;
+  }
+
+  .rond p{
+    line-height: 100px;
+  }
+
+  .cons .diagramme .rect .rect_left{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    margin-right: 20px;
+  }
+
+  .cons .diagramme .rect .rect_right{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    margin-left: 20px;
+  }
+
+  .espaceT{
+    margin: 150px auto;
+  }
+}
+
+@media only screen and (min-width : 1280px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    margin-top: 150px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container section{
+    position: absolute;
+    top: 50%;
+  }
+
+  .encadré{
+    margin: 0px auto;
+  }
+
+  .image img{
+    width: 500px;
+  }
+
+  .rond{
+    background-image: url("Radioactif.png");
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .rond p{
+    line-height: 50px;
+  }
+
+  .présentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cons .diagramme .rect .rect_left{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    margin-right: 20px;
+  }
+
+  .cons .diagramme .rect .rect_right{
+    background: rgb(232, 191, 40);
+    border-radius: 15px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    margin-left: 20px;
+  }
+
+  .gauche{
+    width: 50%;
+    margin: 0px auto;
+  }
+
+  .droite{
+    width: 50%;
+    margin: 0px auto;
+  }
+
+  .sectI{
+    width: 500px;
+    margin:auto;
+  }
+
+  .espaceO{
+    margin: 150px auto;
+  }
+}
+
+#balise_E{
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  background: rgb(232, 191, 40);
+  color: rgb(26, 26, 26);
+  font-size: 46px;
+  padding: 5px;
+}
+
+#balise_I{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgb(232, 191, 40);
+  color: rgb(26, 26, 26);
+  font-size: 46px;
+  padding: 5px;
+}
+
+.encadré{
+  border: 7px dashed rgb(232, 191, 40);
+  padding: 20px;
+  width: 80%;
+}
+
+h1{
+  text-align: center;
+  color: rgb(232, 191, 40);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.encadré p{
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+}
+
+.info{
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.image img{
+  border : 10px solid rgb(232, 191, 40);
+}
+
+.sectI{
+  position: relative;
+}
+
+.rond{
+  background-color: rgb(232, 191, 40);
+  border-radius: 100%;
+  padding: 20px;
+  margin: 50px auto 50px auto;
+}
+
+.rond div{
+  color: rgb(26, 26, 26);
+  font-size: 46px;
+  margin: auto;
+  width: 50px;
+  height: 100px;
+}
+
+.rond p{
+  text-align: center;
+  color: white;
+  font-size: 18px
+}
+
+.résumé .encadré h1{
+  text-align: left;
+}
+
+.résumé .encadré p{
+  margin-bottom: 70px;
+}
+
+.résumé{
+  margin-top: 150px;
+  justify-content: center;
+}
+
+b{
+  color: rgb(232, 191, 40);
+  font-weight: bold;
+}
+
+.cons .diagramme h1{
+  text-align: center;
+  color: rgb(232, 191, 40);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  margin: 150px 0px 15px 0px;
+}
+
+.cons .diagramme .rect{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cons .présentation{
+  margin-top: 100px;
+}
+
+.encadré li{
+  color: white;
+  padding: 5px 0px 5px 0px;
+}
+
+.auj {
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.source{
+  background: rgb(232, 191, 40);
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.source h1{
+  text-align: center;
+  color: rgb(26, 26, 26);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+}
+.source li{
+  color: white;
+  margin-left: 20px;
+  padding: 10px 5px;
+}
+
+.source a:link{
+  color: white;
+  text-decoration: none;
+}
+
+.source a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(232, 191, 40);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+
+footer a:link{
+  color: rgb(26, 26, 26);
+  font-size: 24px;
+  line-height: 50px;
+  margin: 0px 10px;
+}
+
+footer a:visited{
+  color: rgb(26, 26, 26);
+}
+
+footer a:hover{
+  color: white;
+}
